@@ -1,0 +1,45 @@
+// UPSC CSE Prelims Configuration
+// Generated from top_200_exam_universe_seed.csv
+
+export const EXAM_CONFIG = {
+  examId: "EXAM045",
+  slug: "upsc-cse-prelims",
+  name: "UPSC CSE Prelims",
+  fullName: "Civil Services Examination Preliminary",
+  alias: "Civil Services Examination Preliminary",
+  family: "UPSC",
+  category: "Government/civil service",
+  subcategory: "Civil service recruitment",
+  country: "India",
+  region: "South Asia",
+  languages: ["English","Hindi"],
+  estimatedAnnualTakers: "very high applicants",
+  testingWindow: "May-Jun",
+  schedulePattern: "Annual",
+  ageGroup: "21-32",
+  targetUser: "Government job seeker",
+  delivery: "Paper-based",
+  questionTypes: ["MCQ"],
+  adaptivity: "Linear",
+  sections: "GS + CSAT",
+  scoringMode: "Cutoff-based",
+  essayOrSpeaking: "No",
+  ipRisk: "Low",
+  contentReuse: "general_studies_current_affairs",
+  uiEngine: "paper_objective",
+  monetizationPotential: "High",
+  tier: "Tier 2",
+  launchWave: "Wave 3",
+  themeColor: "#0F766E",
+  themeColorDark: "#115E59",
+  localizationComplexity: "High",
+  offlineNeeded: true,
+  mobileFirst: true,
+  locale: "en",
+  isRTL: false,
+  freemiumGate: {
+    dailyQuestions: 10,
+  },
+} as const;
+
+export type ExamConfig = typeof EXAM_CONFIG;
